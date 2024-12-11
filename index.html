@@ -202,9 +202,48 @@
 </head>
 <body>
 
-    <header>
-        <h1>Bridging Materials to Opportunity</h1>
+<header>
+        <div class="auth">
+            <a href="#" onclick="alert('Login form coming soon!')">Log In</a>
+            <a href="#" onclick="alert('Register form coming soon!')">Register</a>
+        </div>
+        <h1>Sustain-a-Brick</h1>
+        <p>Bridging Materials to Opportunity</p>
     </header>
+    <nav>
+        <a href="#" onclick="showSection('about')">About Us</a>
+        <a href="#" onclick="showSection('products')">Our Products</a>
+        <a href="#" onclick="showSection('donation')">Donation</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Us Section -->
+        <section id="about" class="content" style="display: block;">
+            <h2>About Us</h2>
+            <p>Sustain-a-Brick is committed to reducing waste by converting recyclable materials like plastic and wood into durable and sustainable construction bricks. Join us in building a greener, cleaner tomorrow!</p>
+        </section>
+
+        <!-- Our Products Section -->
+        <section id="products" class="content" style="display: none;">
+            <h2>Our Products</h2>
+            <p>We offer a variety of bricks made from recycled materials, available in different colors and sizes to suit diverse construction needs. These eco-friendly bricks are not only cost-effective but also contribute to reducing environmental waste.</p>
+            <img src="bricks.jpg" alt="Sustain-a-Brick Products">
+            <div class="cta">
+                <button onclick="placeOrder()">Place an Order</button>
+            </div>
+        </section>
+
+        <!-- Donation Section -->
+        <section id="donation" class="content" style="display: none;">
+            <h2>Donate Waste Materials</h2>
+            <p>Help us create more sustainable building materials by donating your recyclable waste such as plastic, scrap wood, and sawdust. Together, we can make a difference!</p>
+            <div class="cta">
+                <button onclick="window.location.href='mailto:donate@sustainabrick.com'">Donate Now</button>
+                <button onclick="window.location.href='mailto:contact@sustainabrick.com'">Contact Us</button>
+            </div>
+            <img src="donation.jpg" alt="Donate Waste Materials">
+        </section>
+    </div>
 
     <div class="container">
         <!-- First Page Section: Text (Left) + Image (Right) -->
