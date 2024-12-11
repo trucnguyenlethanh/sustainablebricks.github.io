@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            color: #555;
+        }
+        .container h2 {
+            color: #2e8b57;
+            margin-bottom: 20px;
+        }
+        .container p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Eco-Bricks</h1>
+    </header>
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p>Eco-Bricks is committed to creating a sustainable future by developing high-quality bricks made from recycled materials. Our mission is to reduce environmental impact and provide innovative construction solutions that promote green building practices worldwide.</p>
+        <p>We believe that every step toward sustainability counts, and our products are designed to meet the needs of modern construction while respecting our planet.</p>
+    </div>
+</body>
+</html>
