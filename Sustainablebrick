@@ -1,0 +1,309 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustain-a-Bridge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        header {
+            background: #333; /* Bold dark background for emphasis */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        /* First Page - Text (Left) and Image (Right) */
+        .first-page {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .first-page .text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .first-page .image {
+            flex: 1;
+        }
+        .first-page img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #333;
+        }
+
+        /* Second Page - Heading, Image (Left) and Text + Buttons (Right) */
+        .second-page {
+            margin-top: 50px;
+        }
+        .second-page h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #2e8b57; /* Sea green */
+        }
+        .second-page .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .second-page .hero .image {
+            flex: 1;
+        }
+        .second-page .hero .text {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .second-page img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #333;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta button {
+            background: #ff8c00; /* Dark orange */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta button:hover {
+            background: #ff4500; /* Orange red */
+        }
+
+        /* Why You Should Buy Eco-Brick Section */
+        .why-buy {
+            margin-top: 50px;
+            padding: 20px;
+            background: #fff; /* White background */
+            border-radius: 10px;
+        }
+        .why-buy h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #4682b4; /* Steel blue */
+        }
+        .why-buy .reason {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .why-buy .reason img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+        .why-buy .reason h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .why-buy .reason p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* FAQ Section */
+        .faq {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f0f8ff; /* Light blue background to match the theme */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq h2 {
+            text-align: center;
+            color: #4682b4; /* Steel blue */
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            margin: 10px 0;
+        }
+        .faq-question {
+            width: 100%;
+            background: #4682b4; /* Steel blue */
+            color: white;
+            border: none;
+            text-align: left;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #5a9bd6; /* Slightly lighter blue */
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background: #faf0e6; /* Linen */
+            color: #333;
+            border-left: 5px solid #4682b4;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+
+        /* Expert Feedback Section */
+        .remarks {
+            margin-top: 30px;
+            padding: 20px;
+            background: #faf0e6; /* Linen */
+            border-top: 5px solid #333;
+        }
+        .remarks h3 {
+            text-align: center;
+            color: #333; /* Dark color for emphasis */
+        }
+        .remark {
+            margin-bottom: 20px;
+        }
+        .remark strong {
+            display: block;
+            font-size: 1.1rem;
+            color: #2e8b57; /* Sea green */
+        }
+        .remark p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bridging Materials to Opportunity</h1>
+    </header>
+
+    <div class="container">
+        <!-- First Page Section: Text (Left) + Image (Right) -->
+        <div class="first-page">
+            <div class="text">
+                <p>Sustain-a-Brick, crafted from scrap wood, sawdust, and recycled plastic waste, represents a breakthrough in sustainable construction materials. This platform connects your company with a Brickworks that is looking for your remaining realizable value.</p>
+            </div>
+            <div class="image">
+                <img src="image1.jpg" alt="Eco Bricks">
+            </div>
+        </div>
+
+        <!-- Second Page Section: Heading + Image (Left) and Text + Buttons (Right) -->
+        <div class="second-page">
+            <h2>Join Us In Building a Greener Tomorrow!</h2>
+            <div class="hero">
+                <div class="image">
+                    <img src="green-future-2.jpg" alt="Building a Greener Tomorrow">
+                </div>
+                <div class="text">
+                    <p>Dispose your plastic waste, scrap wood and sawdust to help build a more sustainable future.</p>
+                    <div class="cta">
+                        <button onclick="window.location.href='mailto:donateus@gmail.com'">Donate</button>
+                        <button onclick="window.location.href='mailto:sellus@gmail.com'">Sell</button>
+                    </div>
+                    <p>To buy our bricks, Contact us below.</p>
+                    <div class="cta">
+                        <button onclick="window.location.href='mailto:contactus@gmail.com'">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why You Should Buy Eco-Brick Section -->
+        <div class="why-buy">
+            <h2>Why You Should Buy Sustain-a-Brick?</h2>
+            <div class="reason">
+                <img src="reducing-waste.jpg" alt="Reducing Waste">
+                <div>
+                    <h3>Reducing Waste</h3>
+                    <p>Sustain-a-Brick are made from recycled materials such as plastic waste and wood, effectively reducing landfill overflow and pollution.</p>
+                </div>
+            </div>
+            <div class="reason">
+                <img src="cost-reduction.jpg" alt="Cost Reduction">
+                <div>
+                    <h3>Cost-Effective</h3>
+                    <p>Sustain-a-Brick offer an affordable solution for construction without compromising on quality or durability. They are an excellent alternative to traditional building materials.</p>
+                </div>
+            </div>
+            <div class="reason">
+                <img src="innovative-design.jpg" alt="Innovative & Versatile">
+                <div>
+                    <h3>Innovative & Versatile</h3>
+                    <p>Sustain-a-Brick can be used for a variety of construction purposes, including walls, pavements, and pathways, allowing for greater design flexibility.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What are Sustain-a-Brick?</button>
+                <div class="faq-answer">
+                    <p>Sustain-a-Bricks are sustainable building materials made from plastic waste and other recyclables, reducing environmental harm and offering durable construction solutions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I donate or sell plastic waste,scrapwood and sawdust?</button>
+                <div class="faq-answer">
+                    <p>You can donate or sell plastic waste,scrapwood and sawdust by contacting us via email or visiting our platform.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expert Feedback Section -->
+        <div class="remarks">
+            <h3>Experts'</h3>
+            <div class="remark">
+                <strong>John Doe</strong>
+                <p>“Sustain-a-Bricks are a game-changer in the construction industry. Not only do they offer a sustainable solution, but they also provide an affordable alternative to traditional materials.”</p>
+            </div>
+            <div class="remark">
+                <strong>Jane Smith</strong>
+                <p>“The future of construction is green, and Sustain-a-Brick are leading the way with their innovative use of recycled materials. A true step towards environmental responsibility!”</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Toggle Script
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
